@@ -57,9 +57,6 @@
     NSLog(@"I love my %@", billyyo.brand);
     self.test3.text = billyyo.brand;
     
-    [personsArray addObject:billyyo];
-
-     self.arraytext.text = personsArray[1];
  
  //   NSString *element = personsArray;
     
@@ -77,6 +74,9 @@
     NSLog(@"Created a %@, too.", chevy.model);
     
     NSLog(@"%@",[Car class]);
+    
+    Car *buick = [[Car alloc] initWithModel:@"Buick Grand National"];
+    NSLog(@"%@", buick.model);
 }
 
 - (void)didReceiveMemoryWarning {
